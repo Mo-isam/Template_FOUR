@@ -1191,8 +1191,136 @@ section .box-13 {
     }
 }
 /* ?? End box-S03 */
-
 /* !! End of Profile------------------------------------------------------------------------------ */
+
+/* !! of Projects------------------------------------------------------------------------------ */
+.Project > div > h3 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.Project > div > p {
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+.Project > div {
+    position: relative;
+}
+.Project > div > span {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #aaa;
+    font-size: 14px;
+}
+.Project > div > div:first-of-type {
+    position: relative;
+    height: 40px;
+}
+.Project > div > div:first-of-type :nth-child(1) {
+    left: 0px;
+}
+.Project > div > div:first-of-type :nth-child(2) {
+    left: 30px;
+}
+.Project > div > div:first-of-type :nth-child(3) {
+    left: 60px;
+}
+.Project > div > div:first-of-type :nth-child(4) {
+    left: 90px;
+}
+.Project > div > div:first-of-type :nth-child(5) {
+    left: 120px;
+}
+.Project > div > div:first-of-type img {
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    bottom: 0;
+    cursor: pointer;
+}
+.Project > div > div:first-of-type img:hover {
+    z-index: 999;
+}
+.Project > div div:nth-of-type(2) {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin: 20px 0;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.Project > div div:nth-of-type(2) span {
+    padding: 5px;
+    background-color: #eee;
+    border-radius: 4px;
+}
+.Project > div div:nth-of-type(3) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Project > div div:nth-of-type(3) span {
+    color: #777;
+}
+.Project > div div:nth-of-type(3) div {
+    position: relative;
+    width: 50%;
+    height: 8px;
+    background-color: #eee;
+    border-radius: 50px;
+}
+.Project > div div:nth-of-type(3) div::before {
+    content: "";
+    position: absolute;
+    height: 8px;
+    border-radius: 50px;
+    background-color: var(--green-color);
+}
+.Project > .box-J01 > div:nth-of-type(3) > div:before {
+    width: 49%;
+    background-color: var(--red-color);
+}
+.Project > .box-J02 > div:nth-of-type(3) > div:before {
+    width: 80%;
+}
+.Project > .box-J03 > div:nth-of-type(3) > div:before {
+    width: 100%;
+    background-color: var(--blue-color);
+}
+.Project > .box-J04 > div:nth-of-type(3) > div:before {
+    width: 60%;
+}
+.Project > .box-J05 > div:nth-of-type(3) > div:before {
+    width: 70%;
+}
+.Project > .box-J06 > div:nth-of-type(3) > div:before {
+    width: 40%;
+    background-color: var(--red-color);
+}
+.Project > .box-J07 > div:nth-of-type(3) > div:before {
+    width: 65%;
+}
+.Project > .box-J08 > div:nth-of-type(3) > div:before {
+    width: 58%;
+}
+.Project > .box-J09 > div:nth-of-type(3) > div:before {
+    width: 90%;
+}
+
+@media only screen and (max-width: 767px) {
+    .Project > div div:nth-of-type(2) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .Project > div div:nth-of-type(3) {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* !! End of Projects------------------------------------------------------------------------------ */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 }
