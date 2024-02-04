@@ -1321,6 +1321,73 @@ section .box-13 {
 }
 
 /* !! End of Projects------------------------------------------------------------------------------ */
+/* !! of courses------------------------------------------------------------------------------ */
+section > .courses {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.courses > div:not(.box-1) {
+    padding: 0px;
+    position: relative;
+}
+section > .courses > div img:last-of-type {
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+}
+section > .courses > div img:first-of-type {
+    width: 20%;
+    border-radius:50%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 3px solid white;
+}
+section > .courses > div p {
+    font-size: 14px;
+    word-spacing: 2px;
+    font-weight: 600;
+}
+section > .courses > div > div:first-of-type {
+    padding: 20px;
+    line-height: 1.5;
+}
+section > .courses > div > div:last-of-type {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+    border-top: 2px solid #eee;
+}
+section > .courses > div > div:last-of-type span {
+    color: #777;
+    position: relative;
+    font-size: 13px;
+    font-weight: 600;
+}
+section > .courses > div > div:last-of-type span:first-of-type:before {
+    content: "\f007  ";
+    font-weight: 400;
+    font-family: var(--fa-style-family-classic);
+}
+section > .courses > div > div:last-of-type span:last-of-type::before {
+    content: "\24  ";
+    font-weight: 900;
+    font-family: var(--fa-style-family-classic);
+}
+section > .courses > div > div:last-of-type::before {
+    content: "Course Info";
+    position: absolute;
+    font-weight: 600;
+    top: -10px;
+    right: 50%;
+    background-color: var(--blue-color);
+    color: white;
+    padding: 5px;
+    border-radius: 6px;
+    transform: translateX(50%);
+}
+
+
+/* !! End of Courses------------------------------------------------------------------------------ */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 }
