@@ -1187,7 +1187,10 @@ section .box-13 {
     .pro-container .box-P23 > div {
         flex-direction: column;
         text-align: center;
-        gap: 0;
+        gap: 10px;
+    }
+    .pro-container .box-P23 > div > div:last-of-type {
+        align-items: center;
     }
 }
 /* ?? End box-S03 */
