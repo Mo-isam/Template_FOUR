@@ -1338,7 +1338,7 @@ section > .courses > div img:last-of-type {
 }
 section > .courses > div img:first-of-type {
     width: 20%;
-    border-radius:50%;
+    border-radius: 50%;
     position: absolute;
     top: 10px;
     left: 10px;
@@ -1389,8 +1389,267 @@ section > .courses > div > div:last-of-type::before {
     transform: translateX(50%);
 }
 
-
 /* !! End of Courses------------------------------------------------------------------------------ */
+/* !! of Friends------------------------------------------------------------------------------ */
+section > .friends {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+section > .friends > div {
+    position: relative;
+}
+.friends > div > div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.friends > div > i:first-of-type {
+    left: 10px;
+}
+.friends > div > i:last-of-type {
+    left: 45px;
+}
+.friends > div > i {
+    z-index: 100;
+    transition: 0.3s;
+    position: absolute;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #777;
+    background-color: #eee;
+    border-radius: 50%;
+}
+.friends > div > i:hover {
+    color: white;
+    background-color: var(--blue-color);
+}
+.friends > div > div img {
+    width: 100px;
+    border-radius: 50%;
+}
+.friends > div > div:first-of-type h3 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.friends > div > div:first-of-type p {
+    font-weight: 600;
+    font-size: 14px;
+}
+.friends > div > div:nth-of-type(2) {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+}
+.friends > div:nth-child(1) > div:nth-of-type(2)::before,
+.friends > div:nth-child(3) > div:nth-of-type(2)::before,
+.friends > div:nth-child(10) > div:nth-of-type(2)::before,
+.friends > div:nth-child(5) > div:nth-of-type(2)::before,
+.friends > div:nth-child(8) > div:nth-of-type(2)::before {
+    content: "VIP";
+    position: absolute;
+    color: gold;
+    opacity: 0.3;
+    font-size: 50px;
+    font-weight: 600;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.friends > div > div:nth-of-type(2) ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+    word-spacing: 2px;
+}
+.friends > div > div:nth-of-type(3) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.friends > div > div:nth-of-type(3) p:first-child {
+    flex-grow: 1;
+    font-size: 14px;
+}
+.friends > div > div:nth-of-type(3) a {
+    padding: 5px 10px;
+    background-color: var(--blue-color);
+    color: white;
+    border-radius: 6px;
+    font-weight: 600;
+}
+.friends > div > div:nth-of-type(3) a:last-of-type {
+    background-color: var(--red-color);
+}
+/* !! End of Friends------------------------------------------------------------------------------ */
+
+/* !! Files------------------------------------------------------------------------------ */
+.files-container {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 20px;
+    margin: 20px;
+    align-items: start;
+}
+.files {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+.files > div {
+    background-color: white;
+    padding: 10px;
+    border-radius: 6px;
+}
+.files > div::before {
+    content: "\f019";
+    font-family: var(--fa-style-family-classic);
+    font-weight: 900;
+    color: #777;
+}
+.files > div > div:first-child p {
+    font-size: 14px;
+    font-weight: 500;
+}
+.files > div > div:first-child {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.files > div > div img {
+    width: 60px;
+    transition: 300ms;
+}
+.files > div:hover> div img {
+    transform: rotate(10deg);
+}
+.files > div > p {
+    color: #777;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.files > div > div:last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.files > div > div:last-child span {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--grey-color);
+}
+.Statistics {
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Statistics > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 6px;
+    gap: 10px;
+    border: 1px solid #eee;
+}
+.Statistics > div:nth-of-type(1) > i {
+    color: var(--red-color);
+    background-color: #f443363b;
+}
+.Statistics > div:nth-of-type(2) > i {
+    color: var(--green-color);
+    background-color: #22c55e2a;
+}
+.Statistics > div:nth-of-type(3) > i {
+    color: var(--blue-color);
+    background-color: #0077ff2f;
+}
+.Statistics > div:nth-of-type(4) > i {
+    color: var(--orange-color);
+    background-color: #f59f0b3a;
+}
+.Statistics > div > i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.Statistics > div > div {
+    flex-grow: 1;
+}
+.Statistics > div > div p {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.Statistics > div span {
+    font-size: 12px;
+    color: #777;
+}
+.Statistics > a {
+    background-color: var(--blue-color);
+    width: fit-content;
+    margin: auto;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+}
+.Statistics > a:hover i {
+    animation: identifier 300ms ease-in-out 0s infinite both alternate;
+}
+.Statistics > a i {
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+    .files {
+        gap: 10px;
+    }
+    .Statistics h2 {
+        text-align: center;
+    }
+    .Statistics {
+        grid-row: 1/2;
+    }
+    .files-container {
+        margin: 10px;
+        gap: 10px;
+        grid-template-columns: 1fr;
+    }
+}
+
+@keyframes identifier {
+    to {
+        transform: translateY(-5px);
+    }
+}
+
+/* !! End of Files------------------------------------------------------------------------------ */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 }
