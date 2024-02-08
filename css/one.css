@@ -60,7 +60,7 @@ nav .logo::before {
     height: 14px;
     bottom: -1px;
     right: 50%;
-    transform: translate(50% ,50%);
+    transform: translate(50%, 50%);
     background-color: black;
     border: 4px solid white;
     border-radius: 50%;
@@ -99,26 +99,26 @@ header > div:nth-child(2) {
     gap: 10px;
 }
 header form::before {
+    position: absolute;
     font-family: var(--fa-style-family-classic);
     content: "\f002";
     font-weight: 900;
-    position: absolute;
-    left: 30px;
+    z-index: 111;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translate(50%, -50%);
     font-size: 14px;
     color: var(--grey-color);
 }
 header form input {
     padding: 10px 0px 10px 27px;
-    width: 100%;
+    width: 160px;
     outline: none;
     border: 1px solid #ccc;
     border-radius: 10px;
     transition: 300ms;
 }
 header form input:focus {
-    width: 220px;
+    width: 200px;
 }
 header form input:focus::placeholder {
     visibility: hidden;
@@ -152,6 +152,7 @@ header > div:nth-child(2) i::after {
         border-bottom: none;
         font-size: 14px;
         font-weight: 700;
+        margin: 19px 0;
     }
     nav .logo::before {
         display: none;
@@ -166,6 +167,9 @@ header > div:nth-child(2) i::after {
     }
     .page nav {
         padding: 0;
+    }
+    header {
+        padding: 10px;
     }
 }
 /* ! title */
