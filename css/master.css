@@ -1534,7 +1534,7 @@ section > .friends > div {
     width: 60px;
     transition: 300ms;
 }
-.files > div:hover> div img {
+.files > div:hover > div img {
     transform: rotate(10deg);
 }
 .files > div > p {
@@ -1650,6 +1650,115 @@ section > .friends > div {
 }
 
 /* !! End of Files------------------------------------------------------------------------------ */
+
+/* !! Plans------------------------------------------------------------------------------ */
+.plans {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    margin: 20px;
+    gap: 20px;
+}
+.plans > div {
+    padding: 20px;
+    background-color: white;
+}
+.plans > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    color: white;
+    border: 3px solid white;
+    outline-width: 3px;
+    outline-style: solid;
+}
+.plans > div > div span {
+    font-size: 30px;
+    font-weight: 600;
+}
+.plans > div:nth-child(1) > div {
+    background-color: var(--green-color);
+    outline-color: var(--green-color);
+}
+.plans > div:nth-child(2) > div {
+    background-color: var(--blue-color);
+    outline-color: var(--blue-color);
+}
+.plans > div:nth-child(3) > div {
+    background-color: var(--orange-color);
+    outline-color: var(--orange-color);
+}
+.plans > div > ul {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.plans > div > ul li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    border-bottom: 2px solid #eee;
+}
+.plans > div > ul li span {
+    flex-grow: 1;
+}
+.plans > div > ul li::before {
+    font-family: var(--fa-style-family-classic);
+    font-weight: 900;
+}
+.plans > div:first-of-type > ul li:nth-child(1)::before,
+.plans > div:first-of-type > ul li:nth-child(2)::before,
+.plans > div:first-of-type > ul li:nth-child(3)::before {
+    content: "\f00c";
+    color: var(--green-color);
+}
+.plans > div:first-of-type > ul li::before {
+    content: "\f00d";
+    color: var(--red-color);
+}
+.plans > div:nth-child(2) > ul li:nth-child(8)::before,
+.plans > div:nth-child(2) > ul li:nth-child(9)::before {
+    content: "\f00d";
+    color: var(--red-color);
+}
+.plans > div:nth-child(2) > ul li::before {
+    content: "\f00c";
+    color: var(--green-color);
+}
+.plans > div:last-of-type > ul li::before {
+    content: "\f00c";
+    color: var(--green-color);
+}
+.plans > div > ul li::after {
+    content: "\f05a";
+    font-family: var(--fa-style-family-classic);
+    font-weight: 900;
+    color: #777;
+    cursor: pointer;
+}
+.plans > div:first-of-type > a {
+    background-color: var(--green-color);
+}
+.plans > div > a {
+    background-color: var(--blue-color);
+    color: white;
+    padding: 5px 20px;
+    border-radius: 6px;
+}
+.plans > div:last-of-type > span {
+    display: flex;
+    justify-content: center;
+    color: #777;
+}
+@media only screen and (max-width: 767px) {
+    .plans {
+        margin: 10px;
+        gap: 10px;
+    }
+}
+
+/* !! End of Plans------------------------------------------------------------------------------ */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 }
