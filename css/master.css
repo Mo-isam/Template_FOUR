@@ -1756,6 +1756,13 @@ section > .friends > div {
         margin: 10px;
         gap: 10px;
     }
+    .plans {
+        grid-template-columns: minmax(200px, 1fr);
+    }
+    .plans > div > ul li {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
 
 /* !! End of Plans------------------------------------------------------------------------------ */
