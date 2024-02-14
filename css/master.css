@@ -421,7 +421,7 @@ section .container > div {
     background-color: white;
 }
 .container .box-9 li:nth-child(4):after {
-    animation: identifier 700ms ease-in 0s infinite alternate both;
+    animation: identifier_1 700ms ease-in 0s infinite alternate both;
 }
 .container .box-9 img {
     position: absolute;
@@ -430,7 +430,7 @@ section .container > div {
     bottom: 0;
     opacity: 0.3;
 }
-@keyframes identifier {
+@keyframes identifier_1 {
     to {
         background-color: white;
     }
